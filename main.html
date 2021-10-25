@@ -2,9 +2,11 @@
     <head>
         <title>Chase Ellis Portfolio</title>
         <link rel="stylesheet" href="./resources/css/style.css">
+        <meta chaset="utf-8" />
     </head>
     <nav class="nav-bar">
         <h2 class="nav-name">Chase Ellis</h2>
+        
         <a class="nav-link" href="#">About</a>
         <a class="nav-link" href="#">Projects</a>
         <a class="nav-link" href="#">Skills</a>
@@ -18,7 +20,7 @@
             <p>
                 My name is Chase Ellis and i am a new Software Developer. I intend to start a carreer coding, with an end goal of
                 being a back end developer. My skills include limited python (I've mostly worked with basic algorithms and beginner concepts), Web 
-                and front end sof&ware development (HTML, CSS, JavaScript), i also spent a year self teaching penetration testing but unfortunatly 
+                and front end software development (HTML, CSS, JavaScript), i also spent a year self teaching penetration testing but unfortunatly 
                 due to some financial issues failed to recieve my certification. In addition to all this i have about a years worth of managment 
                 experience including book-keeping and scheduling as well as day to day handling of crew and operations. Other work experience is 
                 consists of kitchen work (prep cook, line cook etc.) but i am ready to build a new skill set and change my lifestyle.
@@ -51,7 +53,7 @@
         <div class="skills">
             <h2>Skills: </h2>
             
-            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
             <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
             <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-plain-wordmark.svg" />
             <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
@@ -64,13 +66,28 @@
             <h2>Contact:</h2>
             <p>Chase A. Ellis<br>
                chsellis710@outlook.com<br>
-                
+               (Email me for a phone number)<br> 
             </p>
             <a href="https://www.linkedin.com/in/chase-ellis-9a7190189" target="_blank">
             <img class="icon" src="./resources/images/linkedin-icon.png"/>
             </a>
-
+            <a href="https://github.com/ChaseE95" target="_blank">
+            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+            </a>
         </div>
+        <canvas id="myCanvas" height="320" width="480"></canvas>
+        <script>
 
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.rect(20, 40, 50, 50);
+            ctx.fillStyle = "#FF0000";
+            ctx.fill();
+            ctx.closePath();
+
+
+        </script>
     </main>
 </html>
